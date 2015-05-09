@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		AE1033141AFA06D700F36E5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1033131AFA06D700F36E5F /* AppDelegate.swift */; };
 		AE1033171AFA06D700F36E5F /* iTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE1033151AFA06D700F36E5F /* iTableView.xcdatamodeld */; };
-		AE1033191AFA06D700F36E5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1033181AFA06D700F36E5F /* ViewController.swift */; };
 		AE10331C1AFA06D700F36E5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE10331A1AFA06D700F36E5F /* Main.storyboard */; };
 		AE10331E1AFA06D700F36E5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE10331D1AFA06D700F36E5F /* Images.xcassets */; };
 		AE1033211AFA06D700F36E5F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE10331F1AFA06D700F36E5F /* LaunchScreen.xib */; };
 		AE10332D1AFA06D700F36E5F /* iTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE10332C1AFA06D700F36E5F /* iTableViewTests.swift */; };
+		AE1033391AFA240100F36E5F /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1033381AFA240100F36E5F /* CarListViewController.swift */; };
+		AE10333B1AFA257300F36E5F /* CarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE10333A1AFA257300F36E5F /* CarDetailViewController.swift */; };
+		AE1033411AFB719700F36E5F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1033401AFB719700F36E5F /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,15 @@
 		AE1033121AFA06D700F36E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE1033131AFA06D700F36E5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE1033161AFA06D700F36E5F /* iTableView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTableView.xcdatamodel; sourceTree = "<group>"; };
-		AE1033181AFA06D700F36E5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE10331B1AFA06D700F36E5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE10331D1AFA06D700F36E5F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AE1033201AFA06D700F36E5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AE1033261AFA06D700F36E5F /* iTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE10332B1AFA06D700F36E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE10332C1AFA06D700F36E5F /* iTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTableViewTests.swift; sourceTree = "<group>"; };
+		AE1033381AFA240100F36E5F /* CarListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarListViewController.swift; path = ../CarListViewController.swift; sourceTree = "<group>"; };
+		AE10333A1AFA257300F36E5F /* CarDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailViewController.swift; sourceTree = "<group>"; };
+		AE1033401AFB719700F36E5F /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Car.swift; path = ../Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +83,11 @@
 		AE1033101AFA06D700F36E5F /* iTableView */ = {
 			isa = PBXGroup;
 			children = (
+				AE1033401AFB719700F36E5F /* Car.swift */,
+				AE1033381AFA240100F36E5F /* CarListViewController.swift */,
 				AE1033131AFA06D700F36E5F /* AppDelegate.swift */,
-				AE1033181AFA06D700F36E5F /* ViewController.swift */,
 				AE10331A1AFA06D700F36E5F /* Main.storyboard */,
+				AE10333A1AFA257300F36E5F /* CarDetailViewController.swift */,
 				AE10331D1AFA06D700F36E5F /* Images.xcassets */,
 				AE10331F1AFA06D700F36E5F /* LaunchScreen.xib */,
 				AE1033151AFA06D700F36E5F /* iTableView.xcdatamodeld */,
@@ -215,9 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE1033191AFA06D700F36E5F /* ViewController.swift in Sources */,
+				AE10333B1AFA257300F36E5F /* CarDetailViewController.swift in Sources */,
 				AE1033141AFA06D700F36E5F /* AppDelegate.swift in Sources */,
+				AE1033411AFB719700F36E5F /* Car.swift in Sources */,
 				AE1033171AFA06D700F36E5F /* iTableView.xcdatamodeld in Sources */,
+				AE1033391AFA240100F36E5F /* CarListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +421,7 @@
 				AE1033321AFA06D700F36E5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE1033331AFA06D700F36E5F /* Build configuration list for PBXNativeTarget "iTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +430,7 @@
 				AE1033351AFA06D700F36E5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

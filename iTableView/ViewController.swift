@@ -8,18 +8,31 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class ViewController: UITableViewController {
+    // the data to display
+    let items = ["foo", "bar", "baz"]
+    
+    /* `UITableView` consists of sections and rows
+    default is a single section table, i.e., a plain list
+    method returns the number of rows in this default section */
+    override func tableView(tableView: UITableView,
+        numberOfRowsInSection section: Int)
+        -> Int {
+            return self.items.count
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    /* `UITableViewCell` represent individual table cells
+    table cells are reused
+    a unique identifier is used to group reusable cells
+    returns a cell for a given section and row */
+    override func tableView(tableView: UITableView,
+        cellForRowAtIndexPath indexPath: NSIndexPath)
+        -> UITableViewCell {
+            let item = self.items[indexPath.row]
+            
+            let cell = tableView.dequeueReusableCellWithIdentifier("UITableViewCell", forIndexPath: indexPath) as! UITableViewCell
+            cell.textLabel!.text = item
+            return cell
     }
-
-
 }
 
