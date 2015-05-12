@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "iTableView.CarListViewController.doneAdd (iTableView.CarListViewController)(ObjectiveC.UIStoryboardSegue) -&gt; ():CarListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cars">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "iTableView.CarListViewController.viewDidLoad (iTableView.CarListViewController)() -&gt; ():CarListViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "iTableView.CarListViewController.init (iTableView.CarListViewController.Type)(coder : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSCoder&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;iTableView.CarListViewController&gt;:CarListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cars">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "iTableView.CarDetailViewController.prepareForSegue (iTableView.CarDetailViewController)(ObjectiveC.UIStoryboardSegue, sender : Swift.ImplicitlyUnwrappedOptional&lt;Swift.AnyObject&gt;) -&gt; ():CarDetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "carBrandModel.text!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
